@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="X4PJE4b@"/>
+  <parameter name="projectDescription" value="Useful for customers to buy a prodcut"/>
+  <parameter name="customerDescription" value="Useful for Organization"/>
+  <parameter name="projectName" value="E-commerce"/>
+  <parameter name="clickcheckBox" value="Test flight"/>
+  <parameter name="customerName" value="tester"/>
+  <parameter name="newcustomerName" value="Developer"/>
+  <parameter name="username" value="tvignesh2019@gmail.com"/>
+  <listeners>
+    <listener class-name="Project.Actitime.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Project.Actitime.CreatingTasks">
+        <methods>
+          <include name="projectCreate"/>
+          <include name="projecttaskComplete"/>
+          <include name="projectDelete" invocation-numbers="0"/>
+          <include name="projecttaskDelete"/>
+          <include name="projecttaskCreate"/>
+          <include name="initializeBrowser"/>
+        </methods>
+      </class> <!-- Project.Actitime.CreatingTasks -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
